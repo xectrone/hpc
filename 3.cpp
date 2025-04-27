@@ -2,6 +2,7 @@
 #include <omp.h>
 #include <climits>
 using namespace std;
+
 void min_reduction(int arr[], int n) {
   int min_value = INT_MAX;
   #pragma omp parallel for reduction(min: min_value)
