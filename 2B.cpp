@@ -84,7 +84,7 @@ int main(){
 
     cout<<"Parallel Merge Sort : "<<endl;
     start = omp_get_wtime();
-    parallel_mergesort(a, 0, n-1);
+    parallel_mergesort(b, 0, n-1);
     end = omp_get_wtime();
     for(int i = 0; i<n; i++){
         cout<<b[i]<<" ";
